@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹기능사</title>
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container d-flex">
+            <header id="hd">
+                <div class="header_inner">
+                    <h1 id="logo" class="logo"><a href="#none"></a></h1>
+                    <nav>
+                        <ul class="nav_inner">
+                            <li class="depth1">
+                                <span>이용안내</span>
+                                <ul class="depth2">
+                                    <li><a href="#none">이용방법</a></li>
+                                    <li><a href="#none">이용시간</a></li>
+                                    <li><a href="#none">이용요금</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1">
+                                <span>이벤트정보</span>
+                                <ul class="depth2">
+                                    <li><a href="#none">현장이벤트</a></li>
+                                    <li><a href="#none">온라인이벤트</a></li>
+                                    <li><a href="#none">이벤트예약</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1">
+                                <span>프로그램</span>
+                                <ul class="depth2">
+                                    <li><a href="#none">프로그램안내</a></li>
+                                    <li><a href="#none">온라인예약</a></li>
+                                    <li><a href="#none">단체예약상담</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth1">
+                                <span>고객센터</span>
+                                <ul class="depth2">
+                                    <li><a href="#none">공지사항</a></li>
+                                    <li><a href="#none">자주묻는질문</a></li>
+                                    <li><a href="#none">자료실</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <script>
+                window.onload = function(){
+                    let navList = document.querySelectorAll(".depth1");
+                    let subMenu = document.querySelectorAll(".depth2");
+                    
+                    navList.forEach(navItem => {
+                        navItem.addEventListener("mouseover", function(){
+                            let thisMenu = this.querySelector(".depth2");
+                            thisMenu.classList.add("on");
+                        });
+                        navItem.addEventListener("mouseout", function(){
+                            let thisMenu = this.querySelector(".depth2");
+                            thisMenu.classList.remove("on");
+                        });
+                    })
+                    console.log(subMenu);
+                }
+            </script>
+            <div id="content">
+                <div class="content_inner">
+                    <div id="sect1">
+                        <div class="slide slide1"></div>
+                        <div class="slide slide2"></div>
+                        <div class="slide slide3"></div>
+                    </div>
+                    <div id="sect2">
+                        <div class="tab_sect">
+                            <ul class="tab_menu">
+                                <li>공지사항</li>
+                                <li>갤러리</li>
+                            </ul>
+                        </div>
+                        <div class="banner_sect">
+                            배너
+                        </div>
+                        <div class="shortcut_sect">
+                            바로가기
+                        </div>
+                    </div>
+                </div>
+                <footer id="ft">
+                    <div class="footer_inner">
+                        <h2 class="logo"><a href="#none"></a></h2>
+                        <div class="footer_content">
+                            <div></div>
+                            <p class="copyright"></p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

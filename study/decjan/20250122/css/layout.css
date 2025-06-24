@@ -1,0 +1,52 @@
+/* reset */
+body, ul, li, div, p, h1, h2, h3, header, footer{
+    margin: 0; padding: 0; color: #333;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.container{
+    width: 1000px;
+}
+.d-flex{
+    display: flex;
+}
+
+header{
+    padding: 8px;
+}
+.logo{
+    width: 200px; height: 40px; background: #00f;
+}
+nav{
+    padding: 16px 0;
+}
+.depth1>span{
+    display: block;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.depth1>span:hover{
+    background: #777;
+}
+.depth2{
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+.depth2.on{
+    height: 100%;
+}
+.depth2 a{
+    display: block;
+    padding: 8px 16px;
+}
+.depth2 a:hover{
+    background: #999;
+}

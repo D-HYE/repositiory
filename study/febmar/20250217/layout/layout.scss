@@ -1,0 +1,77 @@
+@media screen and (min-width: 991px) {
+    
+}
+
+#reservation {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex; flex-direction: column;
+            margin-bottom: 15px;
+            .inputs{
+                display: flex; align-items: center; 
+            }
+            @media screen and (min-width: 991px) {
+                &:not(.inspan){
+                    flex-direction: row;
+                }
+                gap: 1rem;
+            }
+
+            label {
+                font-weight: bold;
+                margin-bottom: 5px;
+                @media screen and (min-width: 991px) {
+                    min-width: 120px;
+                }
+            }
+
+            input {
+                flex-grow: 1;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                &:focus-visible{
+                    background: yellow;
+                    color: blue;
+                    outline: blue 1px solid;
+                }
+
+            }
+            
+            &.inspan span{
+                display: none;
+            }
+            &.inspan input:focus + span{
+                display: block;
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition:0.3s;
+
+        &:hover {
+            background: #0056b3;
+        }
+    }
+}

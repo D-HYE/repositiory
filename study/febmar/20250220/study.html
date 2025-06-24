@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스 상태 출력</title>
+</head>
+<body>
+<!-- 
+    <div>
+        <h2>1단계</h2>
+        <label>
+            <input type="checkbox" id="myCheckbox"> 체크박스
+        </label>
+
+        <script>
+            // 체크박스를 선택하고, 상태가 변경될 때마다 실행되는 이벤트 리스너 추가
+            document.getElementById('myCheckbox').addEventListener('change', function() {
+                console.log( this.checked ? '됨' : '안됨' );
+            });
+        </script>
+    </div>
+-->
+<!-- 
+    <div>
+        <h2>2단계</h2>
+        <div>
+            <label>
+                <input type="radio" name="gender" value="남성" id="male"> 남성
+            </label>
+            <label>
+                <input type="radio" name="gender" value="여성" id="female"> 여성
+            </label>
+        </div>
+        <script>
+            // 라디오 버튼의 name이 'gender'인 요소들을 가져와서, 값이 변경될 때마다 출력
+            const genderRadios = document.getElementsByName('gender');
+            
+            genderRadios.forEach((라디오, 순번) => {
+                라디오.addEventListener("change", function(){
+                    if(this.checked){
+                        alert(this.value+" 이시군요! ")
+                    }
+                })
+            });
+        </script>
+    </div>
+-->
+
+
+<!-- 
+    <div>
+        <h2>문제 : 우리가 지금 훈련중인 언어는?</h2>
+        <div>
+            <label>
+                <input type="radio" name="study" value="리액트" > 리액트
+            </label>
+            <label>
+                <input type="radio" name="study" value="노드" > 노드
+            </label>
+            <label>
+                <input type="radio" name="study" value="바닐라" > 바닐라
+            </label>
+            <label>
+                <input type="radio" name="study" value="파이썬" > 파이썬
+            </label>
+        </div>
+        <script>
+            // 바닐라가 선택되었을때 정답!!! / 나머지는 다시 한번생각해보세요!!!
+            const studyRadios = document.getElementsByName('study');           
+            studyRadios.forEach( i => {
+                i.addEventListener("change", function(){          
+                    alert(this.value == "바닐라" ? '정답!!!' : '다시 한 번 생각해 보세요!!!');
+                })
+            });
+        </script>
+    </div>
+-->
+
+    <div>
+        <h2>문제 : 후원해주세요. 공부열심히~~~</h2>
+        <div>
+            <label class="radioinput">
+                <input type="radio" name="support" value="1" > 1
+            </label>
+            <label class="radioinput">
+                <input type="radio" name="support" value="3" > 3
+            </label>
+            <label class="radioinput">
+                <input type="radio" name="support" value="10" > 10
+            </label>
+            <label class="etcinput">
+                <input type="text" name="support"> 직접 입력
+            </label>
+        </div>
+        <p id="supportprice">0 만원</p>
+        <p> 후원금 감사합니다.</p>
+        <script>
+            // 1. 체크된 라디오 버튼의 value값이 #supportprice에 출력됩니다.
+            // 2. 직접 입력일 경우 포커스 되면 라디오 버튼의 체크를 풀어라
+            //
+            // const raidoInput = document.querySelectorAll(".radioinput input");
+            // const outputArea = document.querySelector("#supportprice");
+        
+            // raidoInput.forEach( i => {
+            //     i.addEventListener("change", function(){
+            //         if(this.checked){
+            //             outputArea.innerHTML = this.value;
+            //         }
+        
+            //     })
+            // });
+
+            const inputs = document.getElementsByName('support');
+            const outputArea = document.querySelector("#supportprice");
+
+            inputs.forEach( i => {
+                i.addEventListener('click', function(){
+                    if(this.type === "radio"){
+                        outputArea.innerHTML = `${this.value} 만원`;
+                    }else{
+                        
+                        this.addEventListener('change', function(){
+                            inputs.checked = false;
+                            this.value > 0 ? outputArea.innerHTML = `${this.value} 만원` : outputArea.innerHTML = '0 만원';
+
+                        })
+                    }
+                });
+            });
+
+        </script>
+    </div>
+
+
+</body>
+</html>

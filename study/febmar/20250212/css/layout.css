@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#familySite {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#familySite button {
+  display: block;
+  padding: 0 24px;
+  border: 1px solid blue;
+  background: none;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+#familySite button::after {
+  content: " +";
+}
+
+#familySite ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+#familySite ul li {
+  padding: 8px;
+}
+
+#familySite.on ul {
+  max-height: 300px;
+  border: 1px solid red;
+  border-bottom: 0;
+}
+
+#familySite.on button::after {
+  content: " -";
+}

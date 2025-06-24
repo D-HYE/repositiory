@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <style>
+        a{text-decoration: none; color: #333;}
+        #hd{
+            position: fixed;
+            left: 0; right: 0;
+            z-index: 100;
+            padding: 5px;
+            background: #ddd;
+        }
+        #hd>div{
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        #hd .util{display: flex; gap: 1rem;}
+        #hd nav{display: flex; gap: 2rem; transition: transform .3s;}
+        #gnb{display: flex; gap: 2rem;}
+        .down #hd{
+            transform: translateY(-100%);
+        }
+        @media screen and (min-width: 991px) {
+            #allMenu{display: none;}
+        }
+        @media screen and (max-width: 990px) {
+            #hd nav{
+                gap: 5rem; flex-direction: column;
+                position: absolute; top: 100%; left: 0; transform: translateX(-100%);
+                width: 100%; padding: 1rem;
+                background: #ccc;
+            }
+            #allMenu.on + nav{
+                transform: translateX(0%);
+            }
+            #allMenu::after{
+                content: "햄버거";
+            }
+            #allMenu.on::after{
+                content: "닫기";
+            }
+            #gnb{flex-direction: column;}
+        }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", () =>{
+            const allBtn = document.querySelector("#allMenu");
+            allBtn.addEventListener("click", function(){
+                this.classList.toggle("on");
+
+                // if( this.classList.contains("on") ){
+                //     this.innerHTML = "닫기";
+                // }else{
+                //     this.innerHTML = "햄버거";
+                // }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="hd">
+        <div class="headerInner">
+            <h1><a href="#none">로고</a></h1>
+            <button id="allMenu"></button>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#none">메뉴메뉴</a></li>
+                    <li><a href="#none">메뉴메뉴</a></li>
+                    <li><a href="#none">긴메뉴긴메뉴</a></li>
+                    <li><a href="#none">메뉴메뉴</a></li>
+                    <li><a href="#none">메뉴메뉴</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a href="#none">로그인</a></li>
+                    <li><a href="#none">장바구니</a></li>
+                    <li><a href="#none">마이페이지</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

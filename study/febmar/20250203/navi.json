@@ -1,0 +1,29 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "홈",
+      "link": "/home"
+    },
+    {
+      "id": 2,
+      "name": "소개",
+      "link": "/about"
+    },
+    {
+      "id": 3,
+      "name": "서비스",
+      "link": "/services"
+    },
+    {
+      "id": 4,
+      "name": "포트폴리오",
+      "link": "/portfolio"
+    },
+    {
+      "id": 5,
+      "name": "문의하기",
+      "link": "/contact"
+    }
+  ]
+}

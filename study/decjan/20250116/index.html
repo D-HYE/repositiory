@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩</title>
+    <!-- Noto Sans KR-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Reset -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- cdn 못 쓸 경우에는 내장용 css 사용 -->
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        #box{
+            background: #00f;
+            width: 10rem;
+            height: 15rem;
+            cursor: pointer;
+        }
+        #box span:nth-child(3){
+            display: none;
+            font-size: 2rem;
+        }
+        #box:hover{background: #f00;}
+        #box:hover span{display: none;}
+        #box:hover span:nth-child(3){display: block;}
+    </style>
+</head>
+<body class=" vh-100 d-flex justify-content-center align-items-center">
+    <div id="box" class="d-flex flex-column align-items-center justify-content-center text-white rounded-start-pill">
+        <span>청춘은</span>
+        <span>바로</span>
+        <span>지금</span>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

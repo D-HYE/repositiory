@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상단 스크롤</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="./css/layout.min.css">
+    <!-- <script src="./js/common.js"></script> -->
+    
+</head>
+<body>
+    <!-- <ul id="nav">
+        <li class="d1li"><a href="#none">첫째</a></li>
+        <li class="d1li"><a href="#none">둘째</a></li>
+        <li class="d1li"><a href="#none">셋째</a></li>
+        <li class="d1li"><a href="#none">넷째</a></li>
+    </ul> -->
+    <!-- <script src="./js/forEach.js"></script> -->
+     
+    <div id="familySite">
+        <button>패밀리사이트</button>
+        <ul>
+            <li><a href="#none">패밀리사이트1</a></li>
+            <li><a href="#none">패밀리사이트2</a></li>
+            <li><a href="#none">패밀리사이트3</a></li>
+            <li><a href="#none">패밀리사이트4</a></li>
+            <li><a href="#none">패밀리사이트5</a></li>
+        </ul>
+    </div>
+    <script>
+        const familyBtn = document.querySelector("#familySite button");
+        const family = document.querySelector("#familySite");
+
+        familyBtn.addEventListener("click", function(){
+            family.classList.toggle("on");
+        })
+    </script>
+
+
+</body>
+</html>

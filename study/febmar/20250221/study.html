@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20250221</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+</head>
+<body>
+    <ul>
+        <form action="/updatesql.php" method="POST" name="online" id="online"><li class="txtInput">
+                <strong>이름</strong>
+                <input type="text" id="username" name="DB테이블의 필드" placeholder="이름을 입력해주세요." required>
+            </li>
+            <li class="chkInput" id="dd">
+                <strong>성별</strong>
+                <input type="radio" id="gender1" name="gender" value="male">
+                <label for="gender1"><span>남성</span></label>
+                <input type="radio" id="gender2" name="gender" value="female">
+                <label for="gender2"><span>여성</span></label>
+            </li>
+            <li>
+                <strong>국가선택</strong>
+                <select name="country">
+                    <option>국가선택</option>
+                    <option value="kr">대한민국</option>
+                    <option value="us">미국</option>
+                </select>
+            </li>
+            <li>
+                <strong>글작성</strong>
+                <textarea name="comments" placeholder="글을 작성해주세요"></textarea>
+            </li>
+            <li class="chkInput">
+                <strong>구독</strong>
+                <input type="checkbox" name="subscribe" id="news" value="yes">
+                <label for="news"><span>뉴스레터 구독</span></label>
+            </li>
+            <li><input type="submit" value="제출" /></li>
+        </form>
+    </ul>
+    <script>
+        //const onlineform = document.getElementsByName("online"); 배열형
+        const onlineform = document.getElementById("online");
+        onlineform.addEventListener("submit", function(e){
+            e.preventDefault();
+            console.log(this.childNodes, this.children);
+        });
+    </script>
+</body>
+</html>

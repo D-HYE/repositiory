@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="./popup.min.css">
+</head>
+<body class="dim">
+    <div id="popup">
+        <div>팝업 반응형으로 처리하기</div>
+        <button>닫기</button>
+    </div>
+    <div>
+        메인페이지 내용들
+    </div>
+    <script>
+        //document.querySelector();
+        //document.querySelectorAll();
+        //document.body.classList.add("dim");
+        document.querySelector("#popup button").addEventListener('click', function(){
+            document.body.classList.remove("dim");
+        })
+    </script>
+</body>
+</html>

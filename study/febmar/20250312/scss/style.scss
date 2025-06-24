@@ -1,0 +1,11 @@
+p, ul, li, dl, dt, dd, h1, h2, h3{
+    padding: 0; margin: 0;
+}
+
+#faq{
+    dd{display: none;}
+    dt{
+        &.active{color: red;}
+        &.active + dd{display: block;}
+    }
+}
