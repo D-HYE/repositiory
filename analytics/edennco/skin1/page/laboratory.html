@@ -1,0 +1,174 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="my0s" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+   
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+
+<div  class="inner-wide content">
+	
+	<div class="content_list_section">
+		
+		
+		<div class="content_53 display-6 ">
+			
+			<section id="about_53" class="company_value   contentSection">
+				
+				<div id="container" class="container px-xl-3 px-0">
+					<div class="content vision labor">
+						
+						<div class="sec sec01">
+							<div class="sec_inner">
+								
+								<div class="con con01 flex-grow-1">
+									<div class="inner d-xl-flex px-3 px-xl-0">
+										<div class="title title col-md-2 position-unset ">
+											<h2>Laboratory</h2>
+										</div>
+										<div class="con_title">
+											<h3>
+												다양한 종의 고양이를 대상으로												
+											</h3>
+											<p>
+												행동패턴 및 생활 연구을 기반으로 화장실문화 개선하도록 연구합니다.
+											</p>
+										</div>
+									</div>
+									<div class="vision_area">
+										<div class="curtain_wrap">
+											<div class="left" ></div>
+											<div class="right" ></div>
+											<p class="d-flex flex-column justify-content-center align-items-center">
+												<!-- <span class="d-block">품종마다의 혹은 출신마다의 행동패턴을 세심히 연구하여 <br>
+												식문화에서	수면에 이르기까지 다양한 데이터를 기반으로 <br>
+												고양이 배변문화를 개선하도록 노력합니다.
+											</span> -->
+											   <span class="d-flex flex-wrap flex-column flex-md-row text-center">
+												  <span class="col-md-6 text-md-end pe-md-3">1. 기술과 안전을 병행한 제조 솔루션</span>
+												  <span class="col-md-6 text-start ps-md-3">2. 등급/기능별 맞춤형 생산 공정</span>
+												  <span class="col-md-6 text-md-end pe-md-3">3. 최고 품질 설계, 제안 및 테스트</span>
+												  <span class="col-md-6 text-start  ps-md-3">4. 합리적인 비용으로 최상의 결과를 제공</span>
+											   </span>
+												<a href="/page/rnd.html?cate_no=30"
+												class="d-flex  display-8 fw600 text-white position-relative underbar  mt-4">
+												<span>
+													개발제품보기
+												</span>
+												</a>
+											</p>
+											
+										</div>
+										
+										
+										<div class="bg" id="animatedBox"></div>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+<script>
+
+	
+	document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+	 // 요소 선택
+	var $target01 = document.querySelectorAll(".sec01 .curtain_wrap div");
+	var $MotionTxt = document.querySelector(".sec01 .curtain_wrap p");
+	var $bg = document.querySelector(".sec01 .vision_area .bg");
+
+
+
+var sec01Motion = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".sec01 .con01", // 트리거 요소
+				start: "top top", // 시작 위치
+				end: "20% 5%", // 종료 위치
+				toggleActions: "play reset play reset", // 애니메이션 동작
+				scrub: 1, // 스크롤과 동기화
+				invalidateOnRefresh: true, // 리프레시 시 트리거 재계산
+			}
+		});
+
+		sec01Motion.to($target01,{width:0, duration: 1, ease: "sine.in"});
+        sec01Motion.to($MotionTxt,{opacity:1, top:'50%',duration: 1,},"-=.8");
+        sec01Motion.to($bg,{scale:1, duration:1.5, ease: "sine.in"},"-=1.5");
+});
+
+
+   
+   </script>
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="sec sec03">
+							<div class="sec_inner inner d-xl-flex px-3 px-xl-0">
+
+								<div class="con con01  flex-grow-1">
+									<div class="inner text-center">
+										<div class="con_title">
+											<h3>
+												품종 혹은 출신마다의 행동패턴을 세심히 연구하여  <br class="d-none d-lg-block">펫배변문화 개선을 위해 꾸준히 노력합니다.
+												
+													
+											
+												
+											</h3>
+											<p>
+												식문화에서	수면에 이르기까지 다양한 데이터를 기반으로
+													고양이 배변문화를 개선하도록 노력합니다.
+											</p>
+										</div>
+										<div class="mt-5 pt-5">
+											<ul class="d-lg-flex laborlist">
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img"><img src="/layout/img/labor0.jpg"></span>
+												 <span class="tit display-8 mt-4">먼지 테스트</span>
+												 <span class="tit display-6 mt-2 fw800 text-active">분진실험</span>
+												 <span class="txt display-9 mt-4">입자의 단단함은 강도 테스트로 확인하고, <br>먼지 농도는 미세먼지 측정기로 측정합니다. </span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img"><img src="/layout/img/labor1.jpg"></span>
+												 <span class="tit display-8 mt-4">탈취력 테스트</span>
+												 <span class="tit display-6 mt-2  fw800 text-active">암모니아 측정실험</span>
+												 <span class="txt display-9 mt-4">기준 수치 도달 시간과<br> 지속 시간을 측정합니다.</span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img"><img src="/layout/img/labor2.jpg"></span>
+												 <span class="tit display-8 mt-4">응고력 테스트</span>
+												 <span class="tit display-6 mt-2  fw800 text-active">강도 및 뭉침</span>
+												 <span class="txt  display-9 mt-4">입자가 빠르게 뭉치는지, <br>떡짐이나 낙하 시 부서짐 여부를 확인합니다.</span>
+												</li>
+											   </ul>
+										</div>
+				
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</div>
+		
+
+									
+	</div>
+</div>
+
+
+

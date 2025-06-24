@@ -1,0 +1,125 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="cgip" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+<div  class="inner-wide content">
+    
+	<div class="content_list_section">
+		
+		
+		<div class="content_1002  container">
+
+			<section id="consult_1002" class="company_value  contentSection">
+
+			
+                        <div class="content vision consult">
+                            
+                            <div class="sec sec01">
+                                <div class="sec_inner inner d-lg-flex">
+                                    <div class="title col-2 position-unset ">
+										<h2 class="text-uppercase">
+                                            consultation
+                                        </h2>
+                                            
+                                    </div>
+                                    
+                                    <div class="con con01  flex-grow-1">
+            
+                                        <div class="inner">
+                                            <div class="con_title ">
+                                                <h3>
+                                                    OEM & 유통 문의 
+                                                    
+                                                </h3>
+                                                <p>
+                                                    제품개발을 통해 기업의 이미지를 한층 높입니다.
+                                                </p>
+                                            </div>
+                                            <div class="mt-5 pt-5">
+
+                                                <div class="section" module="board_ReadPackage_1002">
+                                                    <!--@css(/css/module/board/readPackage.css)-->
+                                                    <!--@js(/js/module/board/readPackage.js)-->
+                                               
+                                                
+                                                    <div module="board_read_1002" class="{$block_target_class}" {$block_data_attr}>
+                                                        <!--
+                                                            $login_page_url = /member/login.html
+                                                            $deny_access_url = /board/free/list.html
+                                                        -->
+                                                        <div class="ec-base-table typeWrite">
+                                                            <div class="head">
+                                                                <h3 class="{$block_content_class}">{$subject}</h3>
+                                                                <div class="description">
+                                                                    <span class="name">{$member_icon} {$writer} <span class="{$config.display_ip|display}">(ip:{$ip})</span> {$admin_mileage}</span>
+                                                                    <ul class="etcArea">
+                                                                        <li class="{$config.use_date|display}">
+                                                                            <span class="txtNum">{$write_date}</span>
+                                                                        </li>
+                                                                        
+                                                                       
+                                                                       
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                
+                                                            <div class="{$delete_button_auth|display} {$config.use_password|display}">{$form.password}
+                                                                <span class="ec-base-help txtInfo">삭제하려면 비밀번호를 입력하세요.</span>
+                                                            </div>
+                                                            <div class="attach {$config.use_attach|display}">{$attach_file}</div>
+                                                            <div class="detail {$block_content_class}">{$content_image}{$content}</div>
+                                                            <div class="ec-base-button report-button">
+                                                                <span class="gRight">
+                                                                    <a href="#none" class="btnNormalFix sizeS {$is_report_display|display}" onclick="{$board_report_display}">신고</a>
+                                                                    <a href="#none" class="btnNormalFix sizeS {$block_request_btn}" onclick="{$block_action}">차단</a>
+                                                                    <a href="#none" class="btnNormalFix sizeS {$unblock_request_btn}" onclick="{$unblock_action}">차단해제</a>
+                                                                </span>
+                                                            </div>
+                                                            <!--@import(/board/report_popup.html)-->
+                                                        </div>
+                                                
+                                                        <div class="ec-base-button gBottom gBreak">
+                                                            <span class="gLeft">
+                                                                <span class="{$config.is_admin|display}">
+                                                                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.is_post|display}">{$admin_publish_message}</a>
+                                                                    <a href="#none" onclick="{$action_post}" class="btnNormalFix sizeS admin {$config.not_post|display}">{$not_publish_message}</a>
+                                                                    <a href="#none" onclick="{$action_spam}" class="btnNormalFix sizeS {$is_global_display|display}">스팸신고</a>
+                                                                    <a href="#none" onclick="{$action_spam_cancle}" class="btnNormalFix sizeS {$is_global_display|display}">스팸해제</a>
+                                                                </span>
+                                                                <a href="#none" onclick="{$action_delete}" class="btnNormalFix sizeM {$delete_button_auth|display}">삭제</a>
+                                                                <a href="/board/product/modify.html{$param_modify}" class="btnNormalFix sizeM {$modify_button_auth|display}">수정</a>
+                                                            </span>
+                                                            <span class="gRight gBreak">
+                                                                <a href="/page/consult_list.html?cate_no=48" class="btnNormalFix sizeM">목록</a>
+                                                                <a href="/board/product/reply.html{$param_reply}" class="btnSubmitFix sizeM {$reply_button_auth|display}">답변쓰기</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+			</section>
+		
+		</div>
+		
+
+									
+	</div>
+</div>

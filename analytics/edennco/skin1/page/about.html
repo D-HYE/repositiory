@@ -1,0 +1,134 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="eno5" hidden>
+	<!--@import(/page/_inc/topBanner.html)-->
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ <div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+ 
+ 
+ <div  class="inner-wide content">
+	 
+	 <div class="content_list_section">
+		 
+		 
+		 <div class="content_51 display-6 ">
+			 
+			 <section id="about_51" class="company_value   contentSection">
+				 
+				 <div id="container" class="container px-xl-3 px-0">
+					 <div class="content vision">
+						 
+						 <div class="sec sec01">
+							 <div class="sec_inner">
+								 
+								 <div class="con con01 flex-grow-1">
+									 <div class="inner d-xl-flex px-3 px-xl-0">
+										 <div class="title title col-md-2 position-unset ">
+											 <h2>Purpose</h2>
+										 </div>
+										 <div class="con_title">
+											 <h3>
+												 일상의 잠재력을 깨우고, <br>
+												 공존의 미래를 바꿉니다.
+											 </h3>
+										 </div>
+									 </div>
+									 <div class="vision_area">
+										 <div class="curtain_wrap">
+											 <div class="left" ></div>
+											 <div class="right" ></div>
+											 <p>
+												 고양이와 사람 모두를 위한 최적의 환경을 만드는 것, <br class="d-none d-lg-block">
+												 그것이 우리의 첫 걸음입니다.
+											 </p>
+										 </div>
+										 
+										 
+										 <div class="bg" id="animatedBox"></div>
+										 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+										 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+ 
+ <script>
+ 
+	 
+	 document.addEventListener("DOMContentLoaded", () => {
+	 gsap.registerPlugin(ScrollTrigger);
+	  // 요소 선택
+	 var $target01 = document.querySelectorAll(".sec01 .curtain_wrap div");
+	 var $MotionTxt = document.querySelector(".sec01 .curtain_wrap p");
+	 var $bg = document.querySelector(".sec01 .vision_area .bg");
+ 
+ 
+ 
+ var sec01Motion = gsap.timeline({
+			 scrollTrigger: {
+				 trigger: ".sec01 .con01", // 트리거 요소
+				 start: "top top", // 시작 위치
+				 end: "20% 5%", // 종료 위치
+				 toggleActions: "play reset play reset", // 애니메이션 동작
+				 scrub: 1, // 스크롤과 동기화
+				 invalidateOnRefresh: true, // 리프레시 시 트리거 재계산
+			 }
+		 });
+ 
+		 sec01Motion.to($target01,{width:0, duration: 1, ease: "sine.in"});
+		 sec01Motion.to($MotionTxt,{opacity:1, top:'50%',duration: 1,},"-=.8");
+		 sec01Motion.to($bg,{scale:1, duration:1.5, ease: "sine.in"},"-=1.5");
+ });
+ 
+ 
+	
+	</script>
+ 
+ 
+ 
+ 
+									 </div>
+								 </div>
+							 </div>
+						 </div>						
+						 <div class="sec sec03">
+							 <div class="sec_inner inner d-xl-flex px-3 px-xl-0">
+								 <div class="title col-md-2 position-unset ">
+									 <h2>Vision</h2>
+								 </div>
+								 <div class="con con01  flex-grow-1">
+									 <div class="inner">
+										 <div class="con_title">
+											 <h3>
+												 꾸준한 연구와 관찰로 
+												 반려묘의 건강과 행복을 위한 <br class="d-none d-xl-block">새로운 기준이 되겠습니다.
+											 </h3>
+											 <p>
+												 Cleanliness  &amp;  Care, Advanced Materials &amp; Solutions를 기반으로<br class="pc_on">
+												 반려묘와 사람 모두를 위한 건강하고 편리한 생활 환경을 만들어갑니다.
+											 </p>
+										 </div>
+				 
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+			 </section>
+			 
+			 
+		 </div>
+		 
+ 
+									 
+	 </div>
+ </div>
+ 
+ 
+   

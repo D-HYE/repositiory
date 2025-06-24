@@ -1,0 +1,151 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="jy3c" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+   
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+
+
+<div  class="inner-wide content">
+    
+	<div class="content_list_section">
+		
+		
+		<div class="content_57  container ">
+
+			<section id="Patent_57" class="company_value  contentSection">
+
+			
+                        <div class="content vision patent">
+                            
+                            <div class="sec sec01">
+                                <div class="sec_inner inner d-xl-flex px-xl-3">
+                                    <div class="title col-md-2 position-unset ">
+                                        <h2>
+                                            PATENT
+                                        </h2>
+                                            
+                                    </div>
+                                    
+                                    <div class="con con01  flex-grow-1">
+            
+                                        <div class="inner">
+                                            <div class="con_title ">
+                                                <h3>
+                                                    고양이 모래 제품의 혁신적인 기술을 <br>보호하기 위해 특허출원을 진행하고 있습니다. 
+                                                    
+                                                </h3>
+                                                <p>
+                                                    당사의 제품이 지속적인 연구개발을 통해 더욱 신뢰할 수 있는 품질을 유지하고 있음을 증명하며,<br> 앞으로도 고객의 만족을 최우선으로 생각하는 기업이 될 것입니다.
+                                                </p>
+                                            </div>
+                                            <div class="mt-5 pt-5">
+
+                                                                
+                                                <div class="section" module="Board_ListPackage_8">
+                                                    <!--@css(/css/module/board/listPackage_gallary.css)-->
+                                                
+                                             
+                                                    <div class="boardList border-0">
+                                                     
+                                                
+                                                   
+                                                        <div module="board_list_8">
+                                                            <!--
+                                                                $count = 12
+                                                                $login_page_url = /member/login.html
+                                                                $deny_access_url = /index.html
+                                                            -->
+                                                            <ul>
+                                                                <li class="{$block_target_class} border p-3" {$block_data_attr}>
+                                                                    <a href="{$link_board_detail}">
+                                                                        <span class="thumbnail"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></span>
+                                                                        <span class="summary">
+                                                                            <strong class="subject {$block_content_class} display-9">{$subject}<span class="comment">{$comment_count}</span></strong>
+                                                                            <span>{$member_icon}{$writer} </span>
+                                                                            <span class="date {$date_display|display}  display-10">{$write_date}</span>
+                                                                        </span>
+                                                                    </a>
+                                                                    {$checkbox}
+                                                                </li>
+                                                                <li class="{$block_target_class}" {$block_data_attr}>
+                                                                    <a href="{$link_board_detail}">
+                                                                        <span class="thumbnail"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></span>
+                                                                        <span class="summary">
+                                                                            <strong class="subject {$block_content_class} display-9">{$subject}<span class="comment">{$comment_count}</span></strong>
+                                                                            <span>{$member_icon}{$writer} </span>
+                                                                            <span class="date {$date_display|display}  display-10">{$write_date}</span>
+                                                                        </span>
+                                                                    </a>
+                                                                    {$checkbox}
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="boardListEmpty {$empty_display|display}" module="board_empty_8">
+                                                            <p>{$empty_message}</p>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div module="board_ButtonList_8" class="{$write_display|display} ec-base-button gBottom">
+                                                        <span class="gRight">
+                                                            <a href="/board/gallery/write.html{$param_write}" class="btnSubmitFix sizeM {$write_display|display}">글쓰기</a>
+                                                        </span>
+                                                    </div>
+                                                   
+                                                </div>
+                                                
+                                                <div module="board_paging_8" class="section ec-base-paginate typeList border-0">
+                                                    <a href="{$param_prev}">이전 페이지</a>
+                                                    <ol>
+                                                        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                                                        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                                                    </ol>
+                                                    <a href="{$param_next}">다음 페이지</a>
+                                                </div>
+                                                
+                                                <!-- Admin only -->
+                                                <div class="section" module="board_catemove_8">
+                                                    <!--@css(/css/module/board/catemove.css)-->
+                                                    <span class="gColumn">{$board_catemove_selectbox}</span>
+                                                    <span class="gColumn"><a href="#none" class="btnNormal sizeS" onclick="{$action_category_move}">{$category_move}</a></span>
+                                                </div>
+                                                
+                                                <div class="section" module="board_function_8">
+                                                    <!--@css(/css/module/board/function.css)-->
+                                                    <span class="gColumn">{$board_function_selectbox}</span>
+                                                    <span class="gColumn">
+                                                        <a href="#none" class="btnNormal sizeS" onclick="{$action_article_move}">{$article_move}</a>
+                                                        <a href="#none" class="btnNormal sizeS" onclick="{$action_article_copy}">{$article_copy}</a>
+                                                    </span>
+                                                    <span class="ec-base-help">{$board_function_help|replace:*,}</span>
+                                                </div>
+                                                <!-- // Admin only -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+			</section>
+		
+		</div>
+		
+
+									
+	</div>
+</div>
+
+
+

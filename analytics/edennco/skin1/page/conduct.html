@@ -1,0 +1,159 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="3g7f" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+   
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+<div  class="inner-wide content">
+	
+	<div class="content_list_section">
+		
+		
+		<div class="content_55 display-6 ">
+			
+			<section id="about_55" class="company_value   contentSection">
+				
+				<div id="container" class="container px-xl-3 px-0">
+					<div class="content vision conduct">
+						
+						<div class="sec sec01">
+							<div class="sec_inner">
+								
+								<div class="con con01 flex-grow-1">
+									<div class="inner d-xl-flex px-3 px-xl-0">
+										<div class="title title col-md-2 position-unset ">
+											<h2>Collaboration & Respect</h2>
+										</div>
+										<div class="con_title">
+											<h3>
+												지속 가능한 성장, 혁신적인 개발<br class="d-none d-lg-block"> 그리고 협력적인 문화											
+											</h3>
+											<p>
+												우리는 동료 간의 협력이 회사의 성장과 성공에 중요한 역할을 한다고 믿습니다.<br> 각자의 역할을 존중하고, 서로의 의견을 열린 마음으로 듣고 공유하며, 협력적인 분위기 속에서 함께 성장할 수 있도록 노력합니다.
+											</p>
+										</div>
+									</div>
+									<div class="vision_area">
+										<div class="curtain_wrap">
+											<div class="left" ></div>
+											<div class="right" ></div>
+											<p class="d-flex flex-column justify-content-center align-items-center">
+												
+											   <span class="d-flex flex-wrap flex-column flex-md-row text-center">
+												  <span class="col-md-6 text-md-end pe-md-3">1. 지속적인 혁신과 개선</span>
+												  <span class="col-md-6 text-start ps-md-3">2. 빠른 대응과 학습</span>
+												  <span class="col-md-6 text-md-end pe-md-3">3. 고객 중심 사고</span>
+												  <span class="col-md-6 text-start  ps-md-3">4. 자기 계발</span>
+												  <span class="col fw100 mt-5">그리고 가장 중요한 서로간의 <span class="fw700 display-4 d-block">협력과 존중</span>입니다.</span>
+											   </span>
+												
+											</p>
+											
+										</div>
+										
+										
+										<div class="bg dim" id="animatedBox"></div>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+<script>
+
+	
+	document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+	 // 요소 선택
+	var $target01 = document.querySelectorAll(".sec01 .curtain_wrap div");
+	var $MotionTxt = document.querySelector(".sec01 .curtain_wrap p");
+	var $bg = document.querySelector(".sec01 .vision_area .bg");
+
+
+
+var sec01Motion = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".sec01 .con01", // 트리거 요소
+				start: "top top", // 시작 위치
+				end: "20% 5%", // 종료 위치
+				toggleActions: "play reset play reset", // 애니메이션 동작
+				scrub: 1, // 스크롤과 동기화
+				invalidateOnRefresh: true, // 리프레시 시 트리거 재계산
+			}
+		});
+
+		sec01Motion.to($target01,{width:0, duration: 1, ease: "sine.in"});
+        sec01Motion.to($MotionTxt,{opacity:1, top:'50%',duration: 1,},"-=.8");
+        sec01Motion.to($bg,{scale:1, duration:1.5, ease: "sine.in"},"-=1.5");
+});
+
+
+   
+   </script>
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="sec sec03">
+							<div class="sec_inner inner d-xl-flex px-3 px-xl-0">
+
+								<div class="con con01  flex-grow-1">
+									<div class="inner text-center">
+										<div class="con_title">
+											<h3>
+												혁신적이고 책임감 있는 기업문화를 확립을 위해 						
+												
+											</h3>
+											<p>
+												하지 말아야 할것	
+											</p>
+										</div>
+										<div class="mt-5 pt-5">
+											<ul class="d-lg-flex conductlist px-5 px-lg-0">
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img p-md-5"><img src="/layout/img/conduct0.jpg"></span>
+												 <span class="tit display-8 mt-4">현재에만 머물기</span>												 
+												 <span class="txt display-10 mt-4 keep-all">반복적인 일에 안주하지 않고, <br>항상 미래를 생각하며 변화에 대응합니다. </span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img p-md-5"><img src="/layout/img/conduct1.jpg"></span>
+												 <span class="tit display-8 mt-4">갈등을 조장하는 태도</span>												 
+												 <span class="txt display-10 mt-4 keep-all">동료 간 불필요한 갈등을 피하고, <br>원활한 소통을 통해 문제를 해결합니다.</span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img p-md-5"><img src="/layout/img/conduct2.jpg"></span>
+												 <span class="tit display-8 mt-4">책임 회피</span>
+												 
+												 <span class="txt  display-10 keep-all mt-4">맡은 일에 최선을 다하며, <br>어려운 상황에서도 책임을 다합니다.</span>
+												</li>
+											   </ul>
+										</div>
+				
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</div>
+		
+
+									
+	</div>
+</div>
+
+

@@ -1,0 +1,90 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="eno5" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ <div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+
+ 
+ <div  class="inner content">
+ 
+     <div class="content_list_section">
+         
+         
+         <div class="content_52 display-6 ">
+             
+            
+           
+            
+             <section id="way_52" class="company_value   contentSection">
+                 <div id="container" class="container">
+                     <div class="content ">
+                         <div class="sec sec01">
+                             <div class="sec_inner d-xl-flex">
+                                 <div class="title position-unset col-md-2">
+                                     <h2>Business Location</h2>
+                                 </div>
+                                 <div class="con01 flex-grow-1">
+                                     <div class="inner">
+                                         <div class="con_title mb-4">
+                                             <h3 class="display-5 ">
+                                                 가치를 만들어가는 이든앤코<br>
+                                                 소개합니다.
+                                             </h3>
+                                         </div>
+                                         <div class="box display-8">
+                                             <p class="mb-3">경상북도 경주시 외동읍 제내리 655</p>
+                                             <p class="mb-5 display-6 d-flex align-items-center">TEL <span class="mx-3 display-9">|</span> 054-777-0441</p>
+                                              <!-- 카카오톡 지도 제조 음성공장 -->
+                                              <div style='height: min(700px, 70vh)' class='overflow-hidden rounded-3 position-relative'>
+                                                 <div id="kakaoapi_factory" class='h-100 position-absolute start-0 w-100 top-0'>
+         
+                                                 </div>
+                                              </div>  
+                                         </div>
+                                         <script
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChKEFS5jhmbvQCOylLgmxK34cQJphrR38"
+ ></script>
+ 
+ <script>
+   function initMap() {
+     const location = { lat: 35.7129316, lng: 129.2740205 }; // Example coordinates
+     const map = new google.maps.Map(document.getElementById("kakaoapi_factory"), {
+       zoom: 14,
+       center: location,
+     });
+     const marker = new google.maps.Marker({
+       position: location,
+       map: map,
+     });
+   }
+   window.onload = initMap;
+ </script>
+                                         
+                                     </div>
+                                 </div>  
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+            </section>		
+         </div>
+         
+ 
+                                     
+     </div>
+ </div>
+ 
+ 
+ 
+   

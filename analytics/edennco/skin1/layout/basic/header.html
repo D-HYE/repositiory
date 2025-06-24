@@ -1,0 +1,104 @@
+<div class="main_top_banner ez-align-left py-2 px-3 orangmode" data-ez-module="top-banner" data-ez-align="left" data-ez-role="style.color" data-ez-display="visible">
+	<div class="top_banner_box_inner px-lg-3">
+		<div class="top_banner_text w-auto"><!-- 최상단 배너 수정하는곳 -->
+			<!-- <a data-ez-role="a" href="#" data-href="#" target="_self" style="color: black;">첫 쇼핑을 지원하는 3,000원 할인 회원가입 쿠폰</a> -->
+			<div class="topTools btTopToolsLeft d-flex gap-lg-4  ">
+				<div class="btIconWidget  btAccentIconWidget btWidgetWithText ">
+					<div class="btIconWidgetContent d-none d-lg-flex align-items-center">
+						<span class="btIconWidgetTitle me-2 d-flex flex-column justify-content-center activeColor" ><!--@import(/layout/svg/address.html)--></span>
+						<span class="btIconWidgetText">경상북도 경주시 외동읍 제내길 28-3</span>
+					</div></div><div class="btIconWidget  btAccentIconWidget btWidgetWithText"><div class="btIconWidgetContent d-flex justify-content-center">
+						<span class="btIconWidgetTitle me-2 d-flex flex-column justify-content-center activeColor"><!--@import(/layout/svg/tel.html)--></span>
+						<span class="btIconWidgetText">054-777-0441</span></div></div><div class="btIconWidget  btAccentIconWidget btWidgetWithText"><div class="btIconWidgetContent d-none d-md-flex justify-content-center"><span class="btIconWidgetTitle me-2 d-flex flex-column justify-content-center activeColor"><!--@import(/layout/svg/email.html)--></span><span class="btIconWidgetText">edennco6997@naver.com</span></div></div>						</div>
+		</div><!-- //top_banner_text -->
+
+		<div class="top_banner_close pt-0" data-ez-role="close">
+			<input type="checkbox" name="chkbox" id="top_banner_box_cloase" value="1" data-ez-role="disable-term" class="d-none chkinput"><label for="top_banner_box_cloase" data-ez-role="disable-text" class=" d-flex align-items-center">오늘 하루 보지 않기</label>
+			<i aria-hidden="true" class="icon icoClose ">닫기</i>
+		</div><!-- //top_banner_close -->
+	</div><!-- //top_banner_box_inner -->
+</div>
+<header id="header" class="layout01" data-ez-layout="layout01" data-ez="contents-1ysolyh-1">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.layout.header.layout" data-type="array">
+			<ez-item data-id="layout01" data-name="1단 기본형"></ez-item>
+			<ez-item data-id="layout04" data-name="1단 로고 우측형"></ez-item>
+			<ez-item data-id="layout03" data-name="2단 좌측형"></ez-item>
+			<ez-item data-id="layout02" data-name="2단 중앙형"></ez-item>
+            <ez-item data-id="layout05" data-name="2단 슬라이딩 메뉴 노출형"></ez-item>
+  	    </ez-var>
+	</ez-prop>
+	<div class="inner px-3 px-lg-0">
+		<!-- display_pc_only 이 클래스 유용하게쓸것 -->
+		<div class="toparea d-none">
+			<div class="toparea_shoppinginfo">
+				<!-- 글로벌메뉴 -->
+				<div module="Layout_multishopList">
+					<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+					<ul module="Layout_multishopListitem">
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+					</ul>
+				</div>
+          
+			</div><!-- //toparea_shoppinginfo -->
+		</div><!-- //toparea -->
+
+		<div class="top_nav_box px-3" id="top_nav_box">
+			<div class="top_logo position-relative z-10" module="Layout_LogoTop"><a href="/">
+				<!--@import(/layout/svg/logo.html)-->
+			</a></div><!-- //top_logo -->
+
+			<!-- 네비게이션 -->
+			<div data-ez-module="menu-main/1" data-ez-mode="manual">
+					<div module="Layout_category" class="top_category">
+						<!--@js(/js/module/layout/category.js)-->
+							<ul>
+								<li><a href="/{$design_page_url}{$param}"  data-cateno="45" >{$name_or_img_tag}</a></li>
+								<li><a href="/{$design_page_url}{$param}"  data-cateno="30" >{$name_or_img_tag}</a></li>
+								<li><a href="/{$design_page_url}{$param}"  data-cateno="49" >{$name_or_img_tag}</a></li>
+								<li><a href="/{$design_page_url}{$param}"  data-cateno="57" >{$name_or_img_tag}</a></li>
+								<li><a href="/{$design_page_url}{$param}"  data-cateno="48" >{$name_or_img_tag}</a></li>
+
+								<!--<li><a href="/page/about.html?cate_no=45">{$name_or_img_tag}</a></li>
+								<li><a href="/page/rnd.html?cate_no=30">{$name_or_img_tag}</a></li>
+								<li><a href="/page/career.html?cate_no=49">{$name_or_img_tag}</a></li>
+								<li><a href="/page/news.html?cate_no=57">{$name_or_img_tag}</a></li>
+								<li><a href="/page/consult.html?cate_no=48">{$name_or_img_tag}</a></li>-->
+								
+															
+							</ul>
+					</div>
+			</div><!-- //menu-main/1 -->
+	
+
+    
+			<ul class="top_mypage">
+
+				<li class="mo_nav"><a href="javascript:;" class="eNavFold d-flex"><i aria-hidden="true" class="icon icoNav"></i></a></li>
+			</ul><!-- //top_mypage -->
+		</div><!-- //top_nav_box -->
+
+		<div module="Layout_SearchHeader">
+			<!--
+				$product_page=/product/detail.html
+				$category_page=/product/list.html
+			-->
+			<fieldset>
+				<legend>검색</legend>
+				<div class="wrap_search_box">
+					<div class="search_find_product">Find Product</div>
+					<div class="top_search_box">
+						<button type="button" class="btnClose"><img src="/SkinImg/img/pc_search_close.svg" alt="닫기"></button>
+						{$form.keyword}<button type="button" class="btnDelete">삭제</button><button type="button" class="btnSearch" onclick="{$action_search_submit}"><img src="/SkinImg/img/top_search.svg" alt="검색"></button><ul class="autoDrop" id="{$search_auto_id}"></ul>
+					</div><!-- //top_search_box -->
+				</div>
+			</fieldset>
+		</div><!-- //Layout_SearchHeader -->
+	</div><!-- //inner -->
+</header>
+<!--#ez="1/3"-->

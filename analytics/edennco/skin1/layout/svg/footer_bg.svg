@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3200" height="3431" viewBox="0 0 3200 3431">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="esg_slide2" width="3200" height="3431" transform="translate(0 18450.283)" fill="#181818"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.517" gradientTransform="translate(-0.017 0.017) rotate(-1.952)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ea5514" stop-opacity="0.902"/>
+      <stop offset="0.508" stop-color="#ff4d00" stop-opacity="0.251"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="마스크_그룹_93" data-name="마스크 그룹 93" transform="translate(0 -18450.283)" clip-path="url(#clip-path)">
+    <g id="그룹_5953" data-name="그룹 5953" transform="translate(15891.324 32837.328)">
+      <path id="패스_12937" data-name="패스 12937" d="M1154.5-20C1792.113-20,2309,516.887,2309,1154.5S1792.113,2309,1154.5,2309,0,1792.113,0,1154.5,516.887-20,1154.5-20Z" transform="translate(-15380.325 -13673.327)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>

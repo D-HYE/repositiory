@@ -1,0 +1,156 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="eno5" hidden>
+   <!--@import(/page/_inc/topBanner.html)-->
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+
+
+<div  class="inner-wide content">
+	
+	<div class="content_list_section">
+		
+		
+		<div class="content_42 display-6 ">
+			
+			<section id="about_42" class="company_value   contentSection">
+				
+				<div id="container" class="container px-xl-3 px-0">
+					<div class="content vision aim">
+						
+						<div class="sec sec01">
+							<div class="sec_inner">
+								
+								<div class="con con01 flex-grow-1">
+									<div class="inner d-xl-flex px-3 px-xl-0">
+										<div class="title title col-2 position-unset ">
+											<h2>Sustainability</h2>
+										</div>
+										<div class="con_title">
+											<h3>
+												세상 모든 고양이의 건강과 행복을 위해<br>
+												시작된 기업입니다.
+											</h3>
+										</div>
+									</div>
+									<div class="vision_area">
+										<div class="curtain_wrap">
+											<div class="left" ></div>
+											<div class="right" ></div>
+											<p>
+												 품종이나 출신에 관계없이, 모든 고양이는 존중받아야 마땅한 존재입니다. 
+												 우리가 내미는 작은 손길 하나가 그들에게는 큰 차이를 만든다는 믿음으로,
+												  언제든지 도움이 될 수 있는 일이라면 앞장서겠습니다.
+
+
+											</p>
+										</div>
+										
+										
+										<div class="bg" id="animatedBox"></div>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+<script>
+
+	
+	document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+	 // 요소 선택
+	var $target01 = document.querySelectorAll(".sec01 .curtain_wrap div");
+	var $MotionTxt = document.querySelector(".sec01 .curtain_wrap p");
+	var $bg = document.querySelector(".sec01 .vision_area .bg");
+
+
+
+var sec01Motion = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".sec01 .con01", // 트리거 요소
+				start: "top top", // 시작 위치
+				end: "20% 5%", // 종료 위치
+				toggleActions: "play reset play reset", // 애니메이션 동작
+				scrub: 1, // 스크롤과 동기화
+				invalidateOnRefresh: true, // 리프레시 시 트리거 재계산
+			}
+		});
+
+		sec01Motion.to($target01,{width:0, duration: 1, ease: "sine.in"});
+        sec01Motion.to($MotionTxt,{opacity:1, top:'50%',duration: 1,},"-=.8");
+        sec01Motion.to($bg,{scale:1, duration:1.5, ease: "sine.in"},"-=1.5");
+});
+
+
+   
+   </script>
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="sec sec03">
+							<div class="sec_inner inner d-xl-flex px-3 px-xl-0">
+								<div class="title col-md-2 position-unset ">
+									<h2>Social Contribution Activities</h2>
+								</div>
+								<div class="con con01  flex-grow-1">
+									<div class="inner">
+										<div class="con_title">
+											<h3>
+												사회적 책임을 다하고, <br class="d-none d-xl-block">
+												지역 사회나 환경에 기여하는 활동으로 보여드리겠습니다.
+												
+											</h3>
+											<p>
+												앞으로도 이든앤코는 세상 모든 고양이가 행복을 느낄 수 있는 날이 오기까지, 지속적으로 그들을 위한 활동과 혁신적인 해결책을 추구해 나가겠습니다.
+											</p>
+										</div>
+										<div class="mt-5 pt-5">
+											<ul class="d-flex flex-column flex-md-row gap-5 gap-md-0">
+												<li class="d-flex flex-column align-items-center col text-center">
+												 <span class="img"><img src="https://www.rociilga.com/default/img/hblock/content/social/img/img1.jpg"></span>
+												 <span class="tit display-8 mt-4">사회문제 해결</span>
+												 <span class="txt display-9 mt-4">동물 유기, 길고양이학대, 안락사 등<br> 사회문제에 대한 꾸준한 참여해결</span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center">
+												 <span class="img"><img src="https://www.rociilga.com/default/img/hblock/content/social/img/img2.jpg"></span>
+												 <span class="tit display-8 mt-4">펫문화 선진화</span>
+												 <span class="txt display-9 mt-4">구조와 케어, 입양을 통한<br>생명 존중의 가치 실천</span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center">
+												 <span class="img"><img src="https://www.rociilga.com/default/img/hblock/content/social/img/img3.jpg"></span>
+												 <span class="tit display-8 mt-4">지속가능성</span>
+												 <span class="txt  display-9 mt-4">지속적으로 사회적 가치를 창출할 수 있는<br>형태의 사회 공헌가치 실현</span>
+												</li>
+											   </ul>
+										</div>
+				
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</div>
+		
+
+									
+	</div>
+</div>
+
+
+  

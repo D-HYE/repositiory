@@ -1,0 +1,182 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="my0s" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+   
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+
+<div  class="inner-wide content">
+	
+	<div class="content_list_section">
+		
+		
+		<div class="content_29 display-6 ">
+			
+			<section id="about_29" class="company_value   contentSection">
+				
+				<div id="container" class="container px-xl-3 px-0">
+					<div class="content vision develop">
+						
+						<div class="sec sec01">
+							<div class="sec_inner">
+								
+								<div class="con con01 flex-grow-1">
+									<div class="inner d-xl-flex px-3 px-xl-0">
+										<div class="title title col-md-2 position-unset ">
+											<h2>In-house developed process</h2>
+										</div>
+										<div class="con_title">
+											<h3>
+												자체 개발 공정												
+											</h3>
+											<p>
+												우리는 혁신적인 설계와 세밀한 제어, 직관적인 메커니즘을 활용한 공정으로 제품을 만듭니다.<br> 
+												특화된 기술력을 바탕으로 차원이 다른 솔루션을 제공합니다.
+											</p>
+										</div>
+									</div>
+									<div class="vision_area">
+										<div class="curtain_wrap">
+											<div class="left" ></div>
+											<div class="right" ></div>
+											<p class="d-flex flex-column justify-content-center align-items-center">
+												
+											   <span class="d-block">
+												고양이와 보호자가 만족할 수 있도록, 먼지 발생을 최소화하고,<br> 부드럽고 안전한 사용감을 제공합니다.
+											   </span>
+												<a href="/page/rnd.html?cate_no=30"
+												class="d-flex  display-8 fw600 text-white position-relative underbar  mt-4">
+												<span>
+													개발제품보기
+												</span>
+												</a>
+											</p>
+											
+										</div>
+										
+										
+										<div class="bg dim" id="animatedBox"></div>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+										<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+<script>
+
+	
+	document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+	 // 요소 선택
+	var $target01 = document.querySelectorAll(".sec01 .curtain_wrap div");
+	var $MotionTxt = document.querySelector(".sec01 .curtain_wrap p");
+	var $bg = document.querySelector(".sec01 .vision_area .bg");
+
+
+
+var sec01Motion = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".sec01 .con01", // 트리거 요소
+				start: "top top", // 시작 위치
+				end: "20% 5%", // 종료 위치
+				toggleActions: "play reset play reset", // 애니메이션 동작
+				scrub: 1, // 스크롤과 동기화
+				invalidateOnRefresh: true, // 리프레시 시 트리거 재계산
+			}
+		});
+
+		sec01Motion.to($target01,{width:0, duration: 1, ease: "sine.in"});
+        sec01Motion.to($MotionTxt,{opacity:1, top:'50%',duration: 1,},"-=.8");
+        sec01Motion.to($bg,{scale:1, duration:1.5, ease: "sine.in"},"-=1.5");
+});
+
+
+   
+   </script>
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="sec sec03">
+							
+							<div class="sec_inner inner d-xl-flex px-3 px-xl-0">
+
+								<div class="con con01  flex-grow-1">
+									<div class="inner text-center">
+										<div class="con_title">
+											<h3>
+												우리는 최신 기술을 바탕으로 <br>고양이 모래의 새로운 기준을 제시합니다. 
+												
+													
+											
+												
+											</h3>
+											<p>
+												수많은 연구와 테스트를 통해 제품의 성능을 완벽하게 개선했으며, 
+												독자적인 공정 개발로 차별화된 품질을 실현했습니다. 
+											</p>
+										</div>
+										<div class="mt-5 pt-5">
+											<ul class="d-lg-flex laborlist">
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img"><img src="/layout/img/develop0.jpg"></span>
+												 <span class="tit display-8 mt-4 fw700">블랜딩 시스템</span>
+												 
+												 <span class="txt display-10 mt-4 keep-all">벤토나이트 광물을 품질과 기호에 맞게 세밀하게 블랜딩하는 기술</span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+													<span class="img"><img src="/layout/img/develop1.jpg"></span>
+													<span class="tit display-8 mt-4 fw700">먼지제거 공정</span>
+													
+													<span class="txt display-10 mt-4 keep-all">광물단계에서 유해 먼지를 획기적으로 줄이는 특수 공정 </span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+													<span class="img"><img src="/layout/img/develop2.jpg"></span>
+													<span class="tit display-8 mt-4 fw700">탈취 메커니즘</span>
+													
+													<span class="txt display-10 mt-4 keep-all">향으로 덮는 것이 아닌 천연반응으로 악취 자체를 중화시키는 코팅 기술 </span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center mb-5 mb-lg-0">
+												 <span class="img"><img src="/layout/img/develop3.jpg"></span>
+												 <span class="tit display-8 mt-4 fw700">응고력 향상</span>
+												 
+												 <span class="txt display-10 mt-4 keep-all">응고된 고양이모래가 바닥이나 표면에 눌러붙지 않게 만드는 제조 스킬</span>
+												</li>
+												<li class="d-flex flex-column align-items-center col text-center  mb-5 mb-lg-0">
+												 <span class="img"><img src="/layout/img/develop4.jpg"></span>
+												 <span class="tit display-8 mt-4 fw700">향투여 포뮬러</span>
+												 
+												 <span class="txt  display-10 mt-4 keep-all">향이 오랫동안 지속되고 수분이 닿았을 때 퍼지도록 만드는 코팅 기술</span>
+												</li>
+											   </ul>
+										</div>
+				
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</div>
+		
+
+									
+	</div>
+</div>
+
+
+

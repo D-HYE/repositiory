@@ -1,0 +1,109 @@
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1r8y1vs-1"><style>
+  .w-100{ width:100%}
+  </style></div>
+<div class="main_video" data-ez="module-064ai4k-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">     
+      <div class=" youtubebananer position-relative overflow-hidden">
+          <div df-banner-code="youtube" class="video_area" hidden>  
+              <div class="video_box w-100 " df-banner-clone>
+                  <a href="{#href}" target="{#target}">{#item}</a>
+              </div>
+          </div>
+          <div class>
+            <div class="swiper-container mainswiper position-absolute top-0 start-0 end-0 m-auto px-md-3 inner">
+              <div df-banner-code="mainswiper" class="swiper-wrapper " hidden>  
+                  <div class="swiper-slide d-flex flex-column justify-content-center px-3 align-items-start" df-banner-clone>
+                  
+                      {#html}
+                    
+                      
+                      <!-- <a href="{#href}" target="{#target}">
+                          <span class="d-none">{#item}</span>
+                        </a> -->
+                  </div>
+              </div>
+              <div class="options position-absolute start-0  top-50 bottom-0  d-flex flex-column justify-content-md-center justify-content-end px-2 px-md-3">
+                  <div class="page_option d-flex position-relative mt-5 px-md-3 ">
+                      <div class="swiper-button-prev swiper-button-prev-main position-relative start-0"></div> 
+                      <div class="swiper-pagination swiper-pagination-main d-inline-flex fs-4 px-md-5 text-white  white-nowrap w-auto position-relative" style="line-height: 40px;"></div> <!-- Add Pagination -->
+                      <div class="swiper-button-next swiper-button-next-main end-0  position-relative "></div> 
+                  </div>    
+                  <div class="btns">
+                      <button class="start"><i class="xi-play"></i></button>
+                      <button class="stop"><i class="xi-pause"></i></button>
+                  </div> 
+              </div>
+
+            </div>
+          </div>
+              
+       </div>
+      
+  
+  </div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1n9nmi7-1"><script>
+    setTimeout(function () {
+      var main_swiper = new Swiper('.main_video .mainswiper', {
+        speed: 600,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        parallax: true,
+        loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.mainswiper .swiper-pagination-main',
+          type: 'fraction',
+        },
+         navigation: {
+             nextEl: '.youtubebananer .swiper-button-next-main',
+             prevEl: '.youtubebananer .swiper-button-prev-main',
+         },
+        // Slide Change에서 배경을 설정하려면 여기서 초기화
+        on: {
+          init: function () {
+            var slides = this.slides;
+            console.log(slides)
+            // forEach 메서드를 사용하려면 먼저 배열로 변환
+
+            //슬라이드 내의 이미지소스값을 배경으로 옮김처리
+            // Array.from(slides).forEach(function (slide) {
+
+            //   var imgElement = slide.querySelector('img'); // a 태그 내 img 선택
+              
+  
+            //   if (imgElement) {
+            //     var imgSrc = imgElement.getAttribute('src'); // img의 src 값 가져오기
+  
+            //     // 이미지 태그를 삭제
+            //     imgElement.remove();
+  
+            //     // 슬라이드의 배경 이미지 설정
+            //     slide.style.backgroundImage = `url(${imgSrc})`;               
+            //     slide.style.backgroundPosition = 'center';
+            //   }
+            // });
+          },
+        },
+      });
+  
+      // Swiper 초기화
+      main_swiper.init();
+    }, 1500); // 1.5 seconds delay
+  </script><style>
+    /* .mainswiper .swiper-slide{
+        min-height:800px;
+        height:100vh;        
+        background-size: auto 100% !important;
+    } */
+  </style></div>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0y0kh80-1"><style>
+    /* .mainswiper .swiper-slide{
+        min-height:800px;
+        height:100vh;        
+        background-size: auto 100% !important;
+    } */
+  </style></div>
+<!--#ez="1/1"-->

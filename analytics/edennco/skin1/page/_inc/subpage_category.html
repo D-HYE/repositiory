@@ -1,0 +1,79 @@
+<!-- <ul class="menuCategory menu d-flex justify-content-center">
+    <li module="product_displaysubcategory"  class="{$selected} text-center">
+        <a href="/{$design_page_url}?{$param_cate_no}" class="button px-4 mx-3">{$category_name}
+            <span class="count {$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
+        <ul module="product_children">
+            <li class="{$selected}">
+                <a href="{$link_product_list_sub}">{$category_name}
+                    <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
+                <div class="button">
+                    {$children_icon}
+                    <ul module="product_children" class="subCategory">
+                        <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                        <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="{$selected}">
+                <a href="{$link_product_list_sub}">{$category_name}
+                    <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
+                <div class="button">
+                    {$children_icon}
+                    <ul module="product_children" class="subCategory">
+                        <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                        <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul> -->
+<div class="display_pc_only inner">
+    <ul class="menuCategory menu d-flex justify-content-center ">
+        <li module="product_displaycategory" style="display:{$display};" class="{$selected} text-center px-4 mx-3 d-flex align-items-center justify-content-center ">
+            <a href="/{$design_page_url}?{$param_cate_no}" class="button text-white px-0 mx-0 ">{$category_name}
+                <span class="count {$product_count_display|display} text-white">({$product_count})</span></a>
+                <a href="#none" class="iconWrap ms-3"></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="/{$design_page_url}?{$param_cate_no}">{$category_name}
+                        <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="/{$design_page_url}?{$param_cate_no}">{$category_name}
+                        <span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name}<span class="{$product_count_display|display}">({$product_count})</span></a><a href="#none" class="iconWrap"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // DOMContentLoaded 이벤트를 사용하여 DOM이 완전히 로드된 후 실행
+    document.addEventListener("DOMContentLoaded", () => {
+      // 모든 li 요소를 가져오기
+      const listItems = document.querySelectorAll(".menuCategory > li");
+  
+      listItems.forEach((item) => {
+        // li 태그의 하위 요소에 subCategory 클래스가 있는지 확인
+        if (item.querySelector(".xans-product-children")) {
+          // haschildren 클래스 추가
+          item.classList.add("haschildren");
+        }
+      });
+    });
+  </script>

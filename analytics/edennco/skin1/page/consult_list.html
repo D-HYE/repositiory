@@ -1,0 +1,165 @@
+<!--@layout(/layout/basic/about_layout.html)-->
+<!--@js(/js/module/product/menucategory.js)-->
+<!--@css(/css/module/product/menupackage.css)-->
+
+
+<div webpb-banner-code="cgip" hidden>
+    <!--@import(/page/_inc/topBanner.html)-->
+</div>
+
+
+
+
+
+
+<div module="product_headcategory" data-ez-module="product-list-categoryimage/1" class="section product_top_image">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+<div  class="inner-wide content">
+    
+	<div class="content_list_section">
+		
+		
+		<div class="content_1002  container">
+
+			<section id="consult_1002" class="company_value  contentSection">
+
+			
+                        <div class="content vision consult">
+                            
+                            <div class="sec sec01">
+                                <div class="sec_inner inner d-lg-flex">
+                                    <div class="title col-2 position-unset ">
+										<h2 class="text-uppercase">
+                                            consultation
+                                        </h2>
+                                            
+                                    </div>
+                                    
+                                    <div class="con con01  flex-grow-1">
+            
+                                        <div class="inner">
+                                            <div class="con_title ">
+                                                <h3>
+                                                    OEM & 유통 문의 
+                                                    
+                                                </h3>
+                                                <p>
+                                                    제품개발을 통해 기업의 이미지를 한층 높입니다.
+                                                </p>
+                                            </div>
+                                            <div class="mt-5 pt-5">
+
+                                                                
+                                                <div class="section" module="Board_ListPackage_1002">
+                                                    <!--@css(/css/module/board/listPackage.css)-->
+                                                
+                                                    <div class="boardSort">
+                                                        <span module="board_category_1002">{$form.board_category}</span>
+                                                        <span module="board_ReplySort_1002">{$reply_sort}</span>
+                                                    </div>
+                                                
+                                                    <div class="ec-base-table typeList">
+                                                        <table border="1" >
+                                                            <caption>게시판 목록</caption>
+                                                            <colgroup module="board_listheader_1002">
+                                                                <col style="width:80px;" />
+                                                                <col style="width:auto;" />
+                                                                <col style="width:100px;" />
+                                                                <col style="width:90px;" />
+                                                                <col style="width:120px;"  />
+                                                                <!-- <col style="width:74px;" class="{$config.use_cnt|display}" />
+                                                                <col style="width:94px;" class="{$config.is_use_point|display}" /> -->
+                                                            </colgroup>
+                                                            <thead module="board_listheader_1002">
+                                                                <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class} bg-light border" {$block_data_attr}>
+                                                                    <th scope="col" class="chk">{$checkbox} 번호</th>
+                                                                    <th scope="col">제목</th>
+                                                                    <th scope="col" >카테고리</th>
+                                                                    <th scope="col">작성자</th>
+                                                                    <th scope="col" >작성일</th>
+                                                                    <!-- <th scope="col" class="{$config.use_cnt|display}">조회</th>
+                                                                    <th scope="col" class="{$config.is_use_point|display}">평점</th> -->
+                                                                </tr>
+                                                            </thead>
+                                                           
+                                                           
+                                                            <tbody module="board_list_1002" class="center">
+                                                                <!--
+                                                                    $login_page_url = /member/login.html
+                                                                    $deny_access_url = /index.html
+                                                                -->
+                                                                <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
+                                                                    <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
+                                                                    <td class="subject left txtBreak">
+                                                                        {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_mobile}{$icon_new}{$icon_hit}
+                                                                    </td>
+                                                                    <td class="{$category_display|display}">{$category_name}</td>
+                                                                    <td>{$member_icon}{$writer}</td>
+                                                                    <td >{$write_date}</td>
+                                                                    <!-- <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
+                                                                    <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td> -->
+                                                                </tr>
+                                                                <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
+                                                                    <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
+                                                                    <td class="subject left txtBreak">
+                                                                        {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_mobile}{$icon_new}{$icon_hit}
+                                                                    </td>
+                                                                    <td class="{$category_display|display}">{$category_name}</td>
+                                                                    <td>{$member_icon}{$writer}</td>
+                                                                    <td >{$write_date}</td>
+                                                                    <!-- <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
+                                                                    <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td> -->
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p class="message {$empty_display|display}" module="board_empty_1002">{$empty_message}</p>
+                                                    </div>
+                                                    <div module="board_ButtonList_1002" class="ec-base-button gBottom {$write_display|display}">
+                                                        <span class="gRight">
+                                                            <a href="/page/consult.html?cate_no=48" class="btnSubmitFix sizeM {$write_display|display}">글쓰기</a>
+                                                        </span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                <div module="board_paging_1002" class="section ec-base-paginate typeList">
+                                                    <a href="{$param_prev}">이전 페이지</a>
+                                                    <ol>
+                                                        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                                                        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+                                                    </ol>
+                                                    <a href="{$param_next}">다음 페이지</a>
+                                                </div>
+                                                
+                                                <!-- Admin only -->
+                                                <div class="section d-none" module="board_catemove_1002">
+                                                    <!--@css(/css/module/board/catemove.css)-->
+                                                    <span class="gColumn">{$board_catemove_selectbox}</span>
+                                                    <span class="gColumn"><a href="#none" class="btnNormal sizeS" onclick="{$action_category_move}">{$category_move}</a></span>
+                                                </div>
+                                                
+                                                <div class="section d-none" module="board_function_1002">
+                                                    <!--@css(/css/module/board/function.css)-->
+                                                    <span class="gColumn">{$board_function_selectbox}</span>
+                                                    <span class="gColumn">
+                                                        <a href="#none" class="btnNormal sizeS" onclick="{$action_article_move}">{$article_move}</a>
+                                                        <a href="#none" class="btnNormal sizeS" onclick="{$action_article_copy}">{$article_copy}</a>
+                                                    </span>
+                                                    <span class="ec-base-help">{$board_function_help|replace:*,}</span>
+                                                </div>
+                                                <!-- // Admin only -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+			</section>
+		
+		</div>
+		
+
+									
+	</div>
+</div>
